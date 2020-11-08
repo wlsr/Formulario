@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/tv_Confirmar"
+            android:textSize="@dimen/size_titulo"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_nombreC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/layout_nombre">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editNombreC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:focusable="false"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_fecha_nacC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/layout_fecha">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editFechaC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_TelefonoC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/layout_telefono">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTelefonoC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:focusable="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_emailC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/layout_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editEmailC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:focusable="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layout_descripcionC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/layout_desc">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editDescripcionC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textMultiLine"
+                android:focusable="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEditar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit" />
+</LinearLayout>
